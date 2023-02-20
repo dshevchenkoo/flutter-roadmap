@@ -23,7 +23,7 @@ func binarySearch(list: [Int], value: Int) -> Int? {
     var high = list.count - 1
     
     while low <= high {
-        var mid = low + high
+        var mid = (low + high) / 2
         var guess = list[mid]
         if guess == value {
             return mid
